@@ -11,6 +11,7 @@ public class App {
   public static void main(String[] args) {
     AnsiConsole.systemInstall();
     System.out.println("Hello World!");
+    System.out.println(CLibrary.STDOUT_FILENO);
     AnsiConsole.systemUninstall();
   }
 }

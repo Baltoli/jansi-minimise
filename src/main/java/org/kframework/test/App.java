@@ -1,7 +1,6 @@
 package org.kframework.test;
 
-import org.fusesource.jansi.AnsiConsole;
-import org.fusesource.jansi.internal.CLibrary;
+import org.kframework.mpfr.*;
 
 /**
  * Hello world!
@@ -9,9 +8,6 @@ import org.fusesource.jansi.internal.CLibrary;
  */
 public class App {
   public static void main(String[] args) {
-    AnsiConsole.systemInstall();
-    System.out.println("Hello World!");
-    System.out.println(CLibrary.isatty(1));
-    AnsiConsole.systemUninstall();
+    BigFloat f = new BigFloat("0.1", BinaryMathContext.BINARY32);
   }
 }

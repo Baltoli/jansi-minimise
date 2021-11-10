@@ -1,6 +1,7 @@
 package org.kframework.test;
 
-import org.kframework.mpfr.*;
+import org.kframework.mpfr.BigFloat;
+import org.kframework.mpfr.BinaryMathContext;
 
 /**
  * Hello world!
@@ -8,6 +9,6 @@ import org.kframework.mpfr.*;
  */
 public class App {
   public static void main(String[] args) {
-    BigFloat f = new BigFloat("0.1", BinaryMathContext.BINARY32);
+    System.out.println(Math.exp(1.0));
   }
 }
